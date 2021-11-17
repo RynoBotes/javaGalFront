@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { HomePage } from '../home/home.page';
+import { ImageUploadPage } from '../image-upload/image-upload.page';
 
 @Component({
   selector: 'app-gallery',
@@ -21,6 +22,15 @@ export class GalleryPage{
     component: HomePage,
     cssClass:'modal-fullscreen',
     id:'HomePage'
+  });
+  return await modal.present();
+}
+ 
+async upload(){
+  const modal = await this.modalController.create({
+    component: ImageUploadPage,
+    cssClass:'modal-fullscreen',
+    id:'Image-uploadPage'
   });
   return await modal.present();
 }

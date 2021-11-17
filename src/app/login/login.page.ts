@@ -4,6 +4,7 @@ import { ModalController, NavController, NavParams,ToastController } from '@ioni
 import { BASE_API_URL } from 'src/environments/environment';
 import { GalleryPage } from '../gallery/gallery.page';
 import { RegisterPage } from '../register/register.page';
+import { ImageUploadPage } from '../image-upload/image-upload.page';
 
 
 
@@ -70,7 +71,8 @@ export class LoginPage {
   back(){
    this.modalController.dismiss();
  }
- 
+
+
  async gallery(){
  
   const modal = await this.modalController.create({

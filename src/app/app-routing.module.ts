@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'image-upload',
+    loadChildren: () => import('./image-upload/image-upload.module').then( m => m.ImageUploadPageModule)
+  },
   
 ];
 

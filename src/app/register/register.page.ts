@@ -3,6 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { HomePage } from '../home/home.page';
 import { BASE_API_URL } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
+import { ImageUploadPage } from '../image-upload/image-upload.page';
 
 
 let members = [];
@@ -32,6 +33,7 @@ export class RegisterPage {
   });
   return await modal.present();
 }
+
 addmember= ()=>{
   // ev.preventDefault();
 let member ={

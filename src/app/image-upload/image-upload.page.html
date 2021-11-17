@@ -1,11 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Login
+      Upload
     </ion-title>
     
-    <ion-button (click) = "gallery()" horizontal="end" slot="end" >Gallery</ion-button>
-
     <ion-button (click) = "back()" horizontal="end" slot="end" >Back</ion-button>
 
   </ion-toolbar>
@@ -68,26 +66,67 @@
     <!-- <ion-button (click) = "back()"  >Back</ion-button> -->
     <form>
       <div class="login-content">
-        <ion-item>
-          <ion-label id = "usernameText">Username:</ion-label>
-           <ion-input  type="email"  placeholder="rynob1998@gmail.com"
-        #username></ion-input>
-      </ion-item>
+        <!-- <ion-item> -->
+          <ion-label >cellpone:</ion-label>
+          <div>
+
+          </div>
+           <input id = "memberId" type="number"  placeholder="Leave the 0 ex. 834122488">
+      <!-- </ion-item> -->
       </div>
       <div class="login-content">
-        <ion-item>
-        <ion-label floating>Password:</ion-label>
-         <ion-input type="password" name="password" 
-        placeholder="reallyLong1!" id="password" #password></ion-input>
-      </ion-item>
+        <!-- <ion-item> -->
+          <ion-label id = "usernameText">File Path:</ion-label>
+          <div>
+
+          </div>
+           <input id="bloblocation"  type="text"  placeholder="https://za.pinterest.com/pin/593630794626814199/">
+      <!-- </ion-item> -->
       </div>
       <div class="login-content">
-        <ion-button (click) = "getMemberEmail(username.value,password.value)" type="submit" id = "">Submit</ion-button>
+        <!-- <ion-item> -->
+          <ion-label >Photo Name:</ion-label>
+          <div
+          ></div>
+           <input id = "photoName" type="text"  placeholder="Lion">
+      <!-- </ion-item> -->
       </div>
       <div class="login-content">
-        <p >Don't have an account?</p>
-        <a (click) = "Register()" id="registeranc">Register here!</a>
+        <!-- <ion-item> -->
+          <ion-label >Photo Description:</ion-label>
+          <div>
+
+          </div>
+           <input id = "photoDescription" type="text"  placeholder="Die Lion Die Brul RAWWR">
+      <!-- </ion-item> -->
       </div>
+      <div class="login-content">
+        <ion-button (click)="addphoto()" type="submit" id = "uploadbtn">Upload</ion-button>
+      </div>
+     
+    </form>
+
+
+  </ion-card>
+  <ion-card class = "popup">
+    <!-- <ion-button (click) = "back()"  >Back</ion-button> -->
+    <form>
+      <div class="login-content">
+        <!-- <ion-item> -->
+          <ion-label >cellpone:</ion-label>
+          <div>
+
+          </div>
+           <input id = "photoId" type="number"  placeholder="Id of the photo in the db">
+      <!-- </ion-item> -->
+      </div>
+      
+      <!-- </ion-item> -->
+      
+      <div class="login-content">
+        <ion-button (click)="deletePhoto()" type="submit" id = "uploadbtn">Delete</ion-button>
+      </div>
+     
     </form>
 
 
