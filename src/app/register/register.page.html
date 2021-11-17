@@ -1,0 +1,109 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Register
+    </ion-title>
+    <ion-button (click) = "home()" horizontal="end" slot="end" >Home</ion-button>
+
+    <ion-button (click) = "back()" horizontal="end" slot="end" >Back</ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+  <ion-card class = "popup">
+    <!-- <ion-button (click) = "back()"  >Back</ion-button> -->
+    <form>
+      <div class="login-content">
+        <ion-item>
+          <ion-label >cellpone:</ion-label>
+           <input id = "memberId" type="number"  placeholder="Leave the 0 ex. 834122488">
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-item>
+          <ion-label id = "usernameText">Username:</ion-label>
+           <input id="memberEmail"  type="email"  placeholder="rynob1998@gmail.com">
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-item>
+          <ion-label >First Name:</ion-label>
+           <input id = "memberFName" type="text"  placeholder="Ryno">
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-item>
+          <ion-label >Last Name:</ion-label>
+           <input id = "memberLName" type="text"  placeholder="Botes">
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-item>
+        <ion-label floating>Password:</ion-label>
+         <input type="password" name="password" 
+        placeholder="reallyLong1!" id="password" #password>
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-button (click)="addmember()" type="submit" id = "registerbtn">Register</ion-button>
+      </div>
+     
+    </form>
+
+
+  </ion-card>
+
+</ion-content>

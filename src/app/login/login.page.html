@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+    <ion-button (click) = "gallery()" horizontal="end" slot="end" >Gallery</ion-button>
+    <ion-button (click) = "back()" horizontal="end" slot="end" >Back</ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+  <ion-card class = "popup">
+    <!-- <ion-button (click) = "back()"  >Back</ion-button> -->
+    <form>
+      <div class="login-content">
+        <ion-item>
+          <ion-label id = "usernameText">Username:</ion-label>
+           <ion-input  type="email"  placeholder="rynob1998@gmail.com"
+        #username></ion-input>
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-item>
+        <ion-label floating>Password:</ion-label>
+         <ion-input type="password" name="password" 
+        placeholder="reallyLong1!" id="password" #password></ion-input>
+      </ion-item>
+      </div>
+      <div class="login-content">
+        <ion-button (click) = "getMemberEmail(username.value,password.value)" type="submit" id = "">Submit</ion-button>
+      </div>
+      <div class="login-content">
+        <p >Don't have an account?</p>
+        <a (click) = "Register()" id="registeranc">Register here!</a>
+      </div>
+    </form>
+
+
+  </ion-card>
+  
+
+  <!-- <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+</ion-content>

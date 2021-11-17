@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gallery</ion-title>
+    <ion-button (click) = "home()" horizontal="end" slot="end" >Home</ion-button>
+
+    <ion-button (click) = "back()" horizontal="end" slot="end" >Back</ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-align = center>
+  <ion-grid class="grid-colour">
+    <ion-row>
+    <ion-col  col-6 col-md-4 col-xl-3 >
+        <div class="image-container"  zoom="true"> 
+          <img class = "img" src="../../../../../../../../../../../R:/Fotos en videos/111___09/IMG_3921.JPG" (click)="home()"  > 
+          <!-- <img src="assets/images/2.JPG" alt="{{img.imagesPath}}" style="width:150px; height:150px; border-radius: 15px 50px; background-size: cover;" >  -->
+
+        </div> 
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="login()">
+      <ion-icon name="md-cloud-upload"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+</ion-content>
