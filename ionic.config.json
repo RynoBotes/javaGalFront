@@ -1,0 +1,7 @@
+{
+  "name": "galleryProj",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
